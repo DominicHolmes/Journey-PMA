@@ -28,14 +28,14 @@ class JourneyStep {
     }
 }
 
-enum JourneyStepType {
+enum JourneyStepType : String {
     case checkmark
     case divider
     case wayfinding
     case search
     case image
     
-    func getString {
-        return self.
+    var cellIdentifier : String {
+        return self.rawValue + "CellIdentifier"
     }
 }

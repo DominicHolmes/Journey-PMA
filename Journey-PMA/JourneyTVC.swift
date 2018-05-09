@@ -30,6 +30,23 @@ class JourneyTVC : UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let journeyStep = journeySteps![indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(journeyStep.stepType)CellIdentifier")
+        let cell = tableView.dequeueReusableCell(withIdentifier: journeyStep.stepType.cellIdentifier)
+        
+        switch journeyStep.stepType {
+        case .checkmark:
+            let contentLabel = cell?.viewWithTag(100) as! UILabel
+            contentLabel.text = journeyStep.content
+        case .wayfinding:
+            let contentView = cell?.viewWithTag(100) as! UITextView
+            contentView.text = journeyStep.content
+        case .search:
+            let contentView = cell?.viewWithTag(100) as! UITextView
+            contentView.text = journeyStep.content
+        case .image:
+            let imageView = cell?.viewWithTag(100) as UIImageView
+            // load image from url
+        }
+        
+        return cell
     }
 }
