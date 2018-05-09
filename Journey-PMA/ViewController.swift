@@ -40,8 +40,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func toggleLocationSensing(_ sender: Any) {
-        self.startLocationSensing()
-        self.locationSensingLabel.text = "Location Sensing active"
+        //self.startLocationSensing()
+        //self.locationSensingLabel.text = "Location Sensing active"
     }
     
     func startLocationSensing() {
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         let location = CLLocation(latitude: 39.966003149, longitude: -75.181007145)
         
         let matchedLocation = LocationStore.sharedInstance.locationForCLLocation(location: location, ignoreFloors: true)
-        print("Location: \(String(describing: matchedLocation?.name))") // this will return gallery 119
+        //print("Location: \(String(describing: matchedLocation?.name))") // this will return gallery 119
         
         locationManager(locationManager: locationManager, didEnterKnownLocation: matchedLocation!)
     }
@@ -87,6 +87,6 @@ extension ViewController : GalleryLocationManagerDelegate {
     }
     
     @nonobjc func locationManager(locationManager: GalleryLocationManager, didUpdateHeading newHeading: CLHeading) {
-        dump(newHeading)
+        //dump(newHeading)
     }
 }
