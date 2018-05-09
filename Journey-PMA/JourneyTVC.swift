@@ -36,6 +36,22 @@ class JourneyTVC : UITableViewController {
         tableView.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        addButton()
+    }
+    
+    func addButton() {
+        let targetCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        let x = targetCell!.frame.maxX - 52
+        let y = targetCell!.frame.midY
+        let button = UIButton(frame: CGRect(x: x, y: y, width: 37, height: 30))
+        button.setTitle("Done", for: .normal)
+        
+        self.view.addSubview(button)
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return journeySteps?.count ?? 0
     }
