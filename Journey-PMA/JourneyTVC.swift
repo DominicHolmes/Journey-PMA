@@ -45,9 +45,11 @@ class JourneyTVC : UITableViewController {
     func addButton() {
         let targetCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0))
         let x = targetCell!.frame.maxX - 52
-        let y = targetCell!.frame.midY
+        let y = targetCell!.frame.midY - 15
         let button = UIButton(frame: CGRect(x: x, y: y, width: 37, height: 30))
         button.setTitle("Done", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        button.tintColor = .blue
         
         self.view.addSubview(button)
     }
