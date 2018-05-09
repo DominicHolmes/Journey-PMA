@@ -33,7 +33,7 @@
 		B673086820A27B5D005CE34A /* mobileFramework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B673084D20A27B5C005CE34A /* mobileFramework.xcdatamodeld */; };
 		B673086920A27B5D005CE34A /* sampleLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = B673084F20A27B5C005CE34A /* sampleLocations.json */; };
 		B673086A20A27B5D005CE34A /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673085020A27B5D005CE34A /* Edge.swift */; };
-		B673086F20A28547005CE34A /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673086E20A28547005CE34A /* JourneyViewController.swift */; };
+		B673086F20A28547005CE34A /* JourneyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673086E20A28547005CE34A /* JourneyTVC.swift */; };
 		B673087120A289CC005CE34A /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673087020A289CC005CE34A /* Journey.swift */; };
 		B69DEDB1209AA3F60084C1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69DEDB0209AA3F60084C1E0 /* AppDelegate.swift */; };
 		B69DEDB3209AA3F60084C1E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69DEDB2209AA3F60084C1E0 /* ViewController.swift */; };
@@ -74,7 +74,7 @@
 		B673085020A27B5D005CE34A /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		B673086C20A27B95005CE34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B673086D20A27BA1005CE34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../../Downloads/mobileFramework-master-2/mobileFramework/Info.plist"; sourceTree = "<group>"; };
-		B673086E20A28547005CE34A /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		B673086E20A28547005CE34A /* JourneyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyTVC.swift; sourceTree = "<group>"; };
 		B673087020A289CC005CE34A /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		B69DEDAD209AA3F60084C1E0 /* Journey-PMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journey-PMA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69DEDB0209AA3F60084C1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 				B673084F20A27B5C005CE34A /* sampleLocations.json */,
 				B69DEDB0209AA3F60084C1E0 /* AppDelegate.swift */,
 				B69DEDB2209AA3F60084C1E0 /* ViewController.swift */,
-				B673086E20A28547005CE34A /* JourneyViewController.swift */,
+				B673086E20A28547005CE34A /* JourneyTVC.swift */,
 				B673087020A289CC005CE34A /* Journey.swift */,
 				B69DEDB4209AA3F60084C1E0 /* Main.storyboard */,
 				B69DEDB7209AA3FC0084C1E0 /* Assets.xcassets */,
@@ -306,7 +306,7 @@
 				B673085520A27B5D005CE34A /* BackendService.swift in Sources */,
 				B69DEDB1209AA3F60084C1E0 /* AppDelegate.swift in Sources */,
 				B673085720A27B5D005CE34A /* FeatureStore.swift in Sources */,
-				B673086F20A28547005CE34A /* JourneyViewController.swift in Sources */,
+				B673086F20A28547005CE34A /* JourneyTVC.swift in Sources */,
 				B673086520A27B5D005CE34A /* CacheService.swift in Sources */,
 				B673086120A27B5D005CE34A /* QueueController.swift in Sources */,
 				B673086820A27B5D005CE34A /* mobileFramework.xcdatamodeld in Sources */,

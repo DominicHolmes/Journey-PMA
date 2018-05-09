@@ -15,7 +15,6 @@ class Journey {
     init(withSteps steps: [JourneyStep]) {
         self.steps = steps
     }
-    
 }
 
 class JourneyStep {
@@ -30,8 +29,13 @@ class JourneyStep {
 }
 
 enum JourneyStepType {
-    case begin
-    case direction
-    case image
+    case checkmark
+    case divider
+    case wayfinding
     case search
+    case image
+    
+    func getString {
+        return self.
+    }
 }
