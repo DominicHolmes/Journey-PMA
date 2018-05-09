@@ -8,6 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		62486A8273EBAE40DB3B159A /* Pods_Journey_PMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA177434870944E435425A6 /* Pods_Journey_PMA.framework */; };
+		B673085220A27B5D005CE34A /* sampleBeacons.json in Resources */ = {isa = PBXBuildFile; fileRef = B673083620A27B59005CE34A /* sampleBeacons.json */; };
+		B673085320A27B5D005CE34A /* sampleUnits.geojson in Resources */ = {isa = PBXBuildFile; fileRef = B673083720A27B59005CE34A /* sampleUnits.geojson */; };
+		B673085420A27B5D005CE34A /* sampleEdges.json in Resources */ = {isa = PBXBuildFile; fileRef = B673083820A27B59005CE34A /* sampleEdges.json */; };
+		B673085520A27B5D005CE34A /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673083920A27B59005CE34A /* BackendService.swift */; };
+		B673085620A27B5D005CE34A /* QueueControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673083A20A27B59005CE34A /* QueueControllerDelegate.swift */; };
+		B673085720A27B5D005CE34A /* FeatureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673083B20A27B59005CE34A /* FeatureStore.swift */; };
+		B673085820A27B5D005CE34A /* mobileFrameworkURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673083C20A27B59005CE34A /* mobileFrameworkURLProtocol.swift */; };
+		B673085920A27B5D005CE34A /* BeaconStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673083D20A27B5A005CE34A /* BeaconStore.swift */; };
+		B673085A20A27B5D005CE34A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673083E20A27B5A005CE34A /* Constants.swift */; };
+		B673085B20A27B5D005CE34A /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673083F20A27B5A005CE34A /* JSONDecodable.swift */; };
+		B673085C20A27B5D005CE34A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084120A27B5A005CE34A /* Reachability.swift */; };
+		B673085D20A27B5D005CE34A /* EdgeAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084220A27B5A005CE34A /* EdgeAsset.swift */; };
+		B673085E20A27B5D005CE34A /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084320A27B5A005CE34A /* Beacon.swift */; };
+		B673085F20A27B5D005CE34A /* LocationAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084420A27B5A005CE34A /* LocationAsset.swift */; };
+		B673086020A27B5D005CE34A /* GalleryLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084520A27B5B005CE34A /* GalleryLocationManagerDelegate.swift */; };
+		B673086120A27B5D005CE34A /* QueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084620A27B5B005CE34A /* QueueController.swift */; };
+		B673086220A27B5D005CE34A /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084720A27B5B005CE34A /* LocationStore.swift */; };
+		B673086320A27B5D005CE34A /* BeaconAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084820A27B5B005CE34A /* BeaconAsset.swift */; };
+		B673086420A27B5D005CE34A /* GeoJSONAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084920A27B5B005CE34A /* GeoJSONAsset.swift */; };
+		B673086520A27B5D005CE34A /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084A20A27B5B005CE34A /* CacheService.swift */; };
+		B673086620A27B5D005CE34A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084B20A27B5C005CE34A /* Location.swift */; };
+		B673086720A27B5D005CE34A /* GalleryLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673084C20A27B5C005CE34A /* GalleryLocationManager.swift */; };
+		B673086820A27B5D005CE34A /* mobileFramework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B673084D20A27B5C005CE34A /* mobileFramework.xcdatamodeld */; };
+		B673086920A27B5D005CE34A /* sampleLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = B673084F20A27B5C005CE34A /* sampleLocations.json */; };
+		B673086A20A27B5D005CE34A /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673085020A27B5D005CE34A /* Edge.swift */; };
+		B673086F20A28547005CE34A /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673086E20A28547005CE34A /* JourneyViewController.swift */; };
+		B673087120A289CC005CE34A /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673087020A289CC005CE34A /* Journey.swift */; };
 		B69DEDB1209AA3F60084C1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69DEDB0209AA3F60084C1E0 /* AppDelegate.swift */; };
 		B69DEDB3209AA3F60084C1E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69DEDB2209AA3F60084C1E0 /* ViewController.swift */; };
 		B69DEDB6209AA3F60084C1E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69DEDB4209AA3F60084C1E0 /* Main.storyboard */; };
@@ -19,6 +46,36 @@
 		07C49D5F2E73EC56DF175FAE /* Pods-Journey-PMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journey-PMA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Journey-PMA/Pods-Journey-PMA.debug.xcconfig"; sourceTree = "<group>"; };
 		6DA177434870944E435425A6 /* Pods_Journey_PMA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Journey_PMA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5D42B23CF2583F9CC1A7E7 /* Pods-Journey-PMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journey-PMA.release.xcconfig"; path = "Pods/Target Support Files/Pods-Journey-PMA/Pods-Journey-PMA.release.xcconfig"; sourceTree = "<group>"; };
+		B673083620A27B59005CE34A /* sampleBeacons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleBeacons.json; sourceTree = "<group>"; };
+		B673083720A27B59005CE34A /* sampleUnits.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampleUnits.geojson; sourceTree = "<group>"; };
+		B673083820A27B59005CE34A /* sampleEdges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleEdges.json; sourceTree = "<group>"; };
+		B673083920A27B59005CE34A /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		B673083A20A27B59005CE34A /* QueueControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueControllerDelegate.swift; sourceTree = "<group>"; };
+		B673083B20A27B59005CE34A /* FeatureStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureStore.swift; sourceTree = "<group>"; };
+		B673083C20A27B59005CE34A /* mobileFrameworkURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mobileFrameworkURLProtocol.swift; sourceTree = "<group>"; };
+		B673083D20A27B5A005CE34A /* BeaconStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconStore.swift; sourceTree = "<group>"; };
+		B673083E20A27B5A005CE34A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B673083F20A27B5A005CE34A /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		B673084020A27B5A005CE34A /* mobileFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mobileFramework.h; sourceTree = "<group>"; };
+		B673084120A27B5A005CE34A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B673084220A27B5A005CE34A /* EdgeAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeAsset.swift; sourceTree = "<group>"; };
+		B673084320A27B5A005CE34A /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		B673084420A27B5A005CE34A /* LocationAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationAsset.swift; sourceTree = "<group>"; };
+		B673084520A27B5B005CE34A /* GalleryLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryLocationManagerDelegate.swift; sourceTree = "<group>"; };
+		B673084620A27B5B005CE34A /* QueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueController.swift; sourceTree = "<group>"; };
+		B673084720A27B5B005CE34A /* LocationStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationStore.swift; sourceTree = "<group>"; };
+		B673084820A27B5B005CE34A /* BeaconAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconAsset.swift; sourceTree = "<group>"; };
+		B673084920A27B5B005CE34A /* GeoJSONAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONAsset.swift; sourceTree = "<group>"; };
+		B673084A20A27B5B005CE34A /* CacheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		B673084B20A27B5C005CE34A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B673084C20A27B5C005CE34A /* GalleryLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryLocationManager.swift; sourceTree = "<group>"; };
+		B673084E20A27B5C005CE34A /* mobileFramework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mobileFramework.xcdatamodel; sourceTree = "<group>"; };
+		B673084F20A27B5C005CE34A /* sampleLocations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleLocations.json; sourceTree = "<group>"; };
+		B673085020A27B5D005CE34A /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		B673086C20A27B95005CE34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B673086D20A27BA1005CE34A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../../Downloads/mobileFramework-master-2/mobileFramework/Info.plist"; sourceTree = "<group>"; };
+		B673086E20A28547005CE34A /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		B673087020A289CC005CE34A /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		B69DEDAD209AA3F60084C1E0 /* Journey-PMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journey-PMA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69DEDB0209AA3F60084C1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B69DEDB2209AA3F60084C1E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +97,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B673083520A27B59005CE34A /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				B673083620A27B59005CE34A /* sampleBeacons.json */,
+				B673083720A27B59005CE34A /* sampleUnits.geojson */,
+				B673083820A27B59005CE34A /* sampleEdges.json */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		B673086B20A27B85005CE34A /* PMA mobileFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B673083920A27B59005CE34A /* BackendService.swift */,
+				B673084320A27B5A005CE34A /* Beacon.swift */,
+				B673084820A27B5B005CE34A /* BeaconAsset.swift */,
+				B673083D20A27B5A005CE34A /* BeaconStore.swift */,
+				B673084A20A27B5B005CE34A /* CacheService.swift */,
+				B673083E20A27B5A005CE34A /* Constants.swift */,
+				B673085020A27B5D005CE34A /* Edge.swift */,
+				B673084220A27B5A005CE34A /* EdgeAsset.swift */,
+				B673083B20A27B59005CE34A /* FeatureStore.swift */,
+				B673084C20A27B5C005CE34A /* GalleryLocationManager.swift */,
+				B673084520A27B5B005CE34A /* GalleryLocationManagerDelegate.swift */,
+				B673084920A27B5B005CE34A /* GeoJSONAsset.swift */,
+				B673086C20A27B95005CE34A /* Info.plist */,
+				B673083F20A27B5A005CE34A /* JSONDecodable.swift */,
+				B673084B20A27B5C005CE34A /* Location.swift */,
+				B673084420A27B5A005CE34A /* LocationAsset.swift */,
+				B673084720A27B5B005CE34A /* LocationStore.swift */,
+				B673084020A27B5A005CE34A /* mobileFramework.h */,
+				B673084D20A27B5C005CE34A /* mobileFramework.xcdatamodeld */,
+				B673083C20A27B59005CE34A /* mobileFrameworkURLProtocol.swift */,
+				B673084620A27B5B005CE34A /* QueueController.swift */,
+				B673083A20A27B59005CE34A /* QueueControllerDelegate.swift */,
+				B673084120A27B5A005CE34A /* Reachability.swift */,
+				B673086D20A27BA1005CE34A /* Info.plist */,
+			);
+			path = "PMA mobileFramework";
+			sourceTree = "<group>";
+		};
 		B69DEDA4209AA3F60084C1E0 = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +159,13 @@
 		B69DEDAF209AA3F60084C1E0 /* Journey-PMA */ = {
 			isa = PBXGroup;
 			children = (
+				B673086B20A27B85005CE34A /* PMA mobileFramework */,
+				B673083520A27B59005CE34A /* SampleData */,
+				B673084F20A27B5C005CE34A /* sampleLocations.json */,
 				B69DEDB0209AA3F60084C1E0 /* AppDelegate.swift */,
 				B69DEDB2209AA3F60084C1E0 /* ViewController.swift */,
+				B673086E20A28547005CE34A /* JourneyViewController.swift */,
+				B673087020A289CC005CE34A /* Journey.swift */,
 				B69DEDB4209AA3F60084C1E0 /* Main.storyboard */,
 				B69DEDB7209AA3FC0084C1E0 /* Assets.xcassets */,
 				B69DEDB9209AA3FC0084C1E0 /* LaunchScreen.storyboard */,
@@ -147,8 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B673085420A27B5D005CE34A /* sampleEdges.json in Resources */,
+				B673086920A27B5D005CE34A /* sampleLocations.json in Resources */,
+				B673085320A27B5D005CE34A /* sampleUnits.geojson in Resources */,
 				B69DEDBB209AA3FC0084C1E0 /* LaunchScreen.storyboard in Resources */,
 				B69DEDB8209AA3FC0084C1E0 /* Assets.xcassets in Resources */,
+				B673085220A27B5D005CE34A /* sampleBeacons.json in Resources */,
 				B69DEDB6209AA3F60084C1E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,8 +288,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B673086720A27B5D005CE34A /* GalleryLocationManager.swift in Sources */,
+				B673086A20A27B5D005CE34A /* Edge.swift in Sources */,
+				B673085B20A27B5D005CE34A /* JSONDecodable.swift in Sources */,
+				B673085820A27B5D005CE34A /* mobileFrameworkURLProtocol.swift in Sources */,
+				B673087120A289CC005CE34A /* Journey.swift in Sources */,
+				B673086620A27B5D005CE34A /* Location.swift in Sources */,
+				B673086320A27B5D005CE34A /* BeaconAsset.swift in Sources */,
+				B673086020A27B5D005CE34A /* GalleryLocationManagerDelegate.swift in Sources */,
+				B673085D20A27B5D005CE34A /* EdgeAsset.swift in Sources */,
+				B673086220A27B5D005CE34A /* LocationStore.swift in Sources */,
+				B673085620A27B5D005CE34A /* QueueControllerDelegate.swift in Sources */,
+				B673085920A27B5D005CE34A /* BeaconStore.swift in Sources */,
+				B673086420A27B5D005CE34A /* GeoJSONAsset.swift in Sources */,
 				B69DEDB3209AA3F60084C1E0 /* ViewController.swift in Sources */,
+				B673085F20A27B5D005CE34A /* LocationAsset.swift in Sources */,
+				B673085520A27B5D005CE34A /* BackendService.swift in Sources */,
 				B69DEDB1209AA3F60084C1E0 /* AppDelegate.swift in Sources */,
+				B673085720A27B5D005CE34A /* FeatureStore.swift in Sources */,
+				B673086F20A28547005CE34A /* JourneyViewController.swift in Sources */,
+				B673086520A27B5D005CE34A /* CacheService.swift in Sources */,
+				B673086120A27B5D005CE34A /* QueueController.swift in Sources */,
+				B673086820A27B5D005CE34A /* mobileFramework.xcdatamodeld in Sources */,
+				B673085C20A27B5D005CE34A /* Reachability.swift in Sources */,
+				B673085A20A27B5D005CE34A /* Constants.swift in Sources */,
+				B673085E20A27B5D005CE34A /* Beacon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +460,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 374VQ98E23;
 				INFOPLIST_FILE = "Journey-PMA/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "DominicHolmes.Journey-PMA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -346,7 +479,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 374VQ98E23;
 				INFOPLIST_FILE = "Journey-PMA/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "DominicHolmes.Journey-PMA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -376,6 +512,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B673084D20A27B5C005CE34A /* mobileFramework.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B673084E20A27B5C005CE34A /* mobileFramework.xcdatamodel */,
+			);
+			currentVersion = B673084E20A27B5C005CE34A /* mobileFramework.xcdatamodel */;
+			path = mobileFramework.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B69DEDA5209AA3F60084C1E0 /* Project object */;
 }

@@ -6,7 +6,6 @@ target 'Journey-PMA' do
   use_frameworks!
 
   # Pods for Journey-PMA
-  pod 'PMAMobileFramework'
   pod 'Hero'
   
 end
