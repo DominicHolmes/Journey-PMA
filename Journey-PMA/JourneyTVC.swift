@@ -20,7 +20,13 @@ class JourneyTVC : UITableViewController {
         super.viewDidLoad()
         
         let journeyTitle = "Philadelphia History"
-        journeySteps = [JourneyStep(ofType: .checkmark, withContent: "Begin")]
+        journeySteps = [JourneyStep(ofType: .checkmark, withContent: "Begin"),
+                        JourneyStep(ofType: .divider,   withContent: ""),
+                        JourneyStep(ofType: .wayfinding, withContent: "Head to Gallery 201 on the 2nd floor."),
+                        JourneyStep(ofType: .search, withContent: "Search for 'Starry Night'"),
+                        JourneyStep(ofType: .image, withContent: "image/url"),
+                        JourneyStep(ofType: .divider, withContent: ""),
+                        JourneyStep(ofType: .checkmark, withContent: "End")]
         let introContent = "This is a write up describing the journey, etc. This is a write up describing the journey, etc. This is a write up describing the journey, etc. This is a write up describing the journey, etc."
         journey = Journey(called: journeyTitle, withSteps: journeySteps!, withIntro: introContent)
     }
