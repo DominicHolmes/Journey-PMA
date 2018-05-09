@@ -13,11 +13,16 @@ class JourneyTVC : UITableViewController {
     var journeySteps : [JourneyStep]?
     var journey : Journey?
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var introTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let journeyTitle = "Philadelphia History"
         journeySteps = [JourneyStep(ofType: .checkmark, withContent: "Begin")]
-        journey = Journey(withSteps: journeySteps!)
+        let introContent = "This is a write up describing the journey, etc. This is a write up describing the journey, etc. This is a write up describing the journey, etc. This is a write up describing the journey, etc."
+        journey = Journey(called: journeyTitle, withSteps: journeySteps!, withIntro: introContent)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

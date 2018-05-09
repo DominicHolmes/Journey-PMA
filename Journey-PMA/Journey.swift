@@ -10,10 +10,14 @@ import Foundation
 
 class Journey {
     
+    let title: String
     let steps: [JourneyStep]
+    let introContent: String
     
-    init(withSteps steps: [JourneyStep]) {
+    init(called title: String, withSteps steps: [JourneyStep], withIntro intro: String) {
+        self.title = title
         self.steps = steps
+        self.introContent = intro
     }
 }
 
