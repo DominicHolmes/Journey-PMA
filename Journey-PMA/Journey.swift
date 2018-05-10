@@ -8,6 +8,8 @@
 
 import Foundation
 
+//https://docs.google.com/spreadsheets/d/1Rr01zDIH9IpobpV62jgMbR9BOijKCyWPZrIMzJcr_0I/edit?usp=sharing
+
 class Journey {
     
     let title: String

@@ -52,9 +52,9 @@ class JourneyTVC : UITableViewController {
         let targetCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0))
         let x = targetCell!.frame.maxX - 52
         let y = targetCell!.frame.midY - 15
-        let button = UIButton(frame: CGRect(x: x, y: y, width: 45, height: 30))
+        let button = UIButton(frame: CGRect(x: x, y: y, width: 45, height: 27))
         button.setTitle("Done", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(UIColor(red: 0.0, green: 184.0 / 255.0, blue: 217.0 / 255.0, alpha: 1.0), for: .normal)
         button.tintColor = .blue
         
         button.addTarget(self, action: #selector(doneButtonTapped), for: .touchUpInside)
