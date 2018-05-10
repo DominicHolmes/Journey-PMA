@@ -19,6 +19,27 @@ class Journey {
         self.steps = steps
         self.introContent = intro
     }
+    
+    static func getDefaultJournies() -> [Journey] {
+        var journies = [Journey]()
+        
+        let journeyTitle = "Philadelphia History"
+        let journeySteps = [JourneyStep(ofType: .checkmark, withContent: "Begin"),
+                        JourneyStep(ofType: .divider,   withContent: ""),
+                        JourneyStep(ofType: .wayfinding, withContent: "Head to Gallery 201 on the 2nd floor."),
+                        JourneyStep(ofType: .search, withContent: "Search for 'Starry Night'"),
+                        JourneyStep(ofType: .image, withContent: "image/url"),
+                        JourneyStep(ofType: .divider, withContent: ""),
+                        JourneyStep(ofType: .checkmark, withContent: "End")]
+        let introContent = "This is a write up describing the journey, etc. This is a write up describing the journey, etc. This is a write up describing the journey, etc. This is a write up describing the journey, etc."
+        let newJourney = Journey(called: journeyTitle, withSteps: journeySteps, withIntro: introContent)
+        
+        for i in 0...6 {
+            journies.append(newJourney)
+        }
+        
+        return journies
+    }
 }
 
 class JourneyStep {

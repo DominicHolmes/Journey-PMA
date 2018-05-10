@@ -13,6 +13,11 @@ class JourneyTVC : UITableViewController {
     var journeySteps : [JourneyStep]?
     var journey : Journey?
     
+    var doneButton : UIButton?
+    
+    var buttonPosition = 0
+    var maxButtonPosition = 0
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var introTextView: UITextView!
     
@@ -32,6 +37,7 @@ class JourneyTVC : UITableViewController {
                         JourneyStep(ofType: .checkmark, withContent: "End")]
         let introContent = "This is a write up describing the journey, etc. This is a write up describing the journey, etc. This is a write up describing the journey, etc. This is a write up describing the journey, etc."
         journey = Journey(called: journeyTitle, withSteps: journeySteps!, withIntro: introContent)
+        maxButtonPosition = journeySteps!.count - 1
         
         tableView.reloadData()
     }
@@ -46,12 +52,33 @@ class JourneyTVC : UITableViewController {
         let targetCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0))
         let x = targetCell!.frame.maxX - 52
         let y = targetCell!.frame.midY - 15
-        let button = UIButton(frame: CGRect(x: x, y: y, width: 37, height: 30))
+        let button = UIButton(frame: CGRect(x: x, y: y, width: 45, height: 30))
         button.setTitle("Done", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         button.tintColor = .blue
         
+        button.addTarget(self, action: #selector(doneButtonTapped), for: .touchUpInside)
         self.view.addSubview(button)
+        
+        doneButton = button
+    }
+    
+    @objc func doneButtonTapped() {
+        
+        if buttonPosition < maxButtonPosition {
+            buttonPosition += 1
+            
+            if let cell = tableView.cellForRow(at: IndexPath(row: buttonPosition, section: 0)) {
+                UIView.animate(withDuration: 0.2) {
+                    let currentFrame = self.doneButton!.frame
+                    self.doneButton!.frame = CGRect(x: currentFrame.minX, y: cell.frame.midY - 15,
+                                                    width: currentFrame.width, height: currentFrame.height)
+                }
+            }
+        }
+        
+        
+        print("Button press")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
